@@ -53,9 +53,10 @@ $route['default_controller'] = 'BlogPostController';
 // $route['login'] = 'login/index';
 // $route['login/callback'] = 'login/callback';
 
+$route['article/(:any)/(:any)'] = 'ArticleController/articleView/$1/$2';
 
-
-
+#policies
+$route['policy'] = 'PolicyController/index';
 
 
 #testing environment

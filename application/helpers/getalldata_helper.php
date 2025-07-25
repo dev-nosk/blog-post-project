@@ -9,3 +9,14 @@ function getInitial()
     return 'initial Helper from getAllData_helper!';
 }
 
+function _getAllCategories()
+{
+    $CI =& get_instance();
+    $CI->load->model('BlogPostModel'); // Load the model correctly
+    
+    $result = $CI->BlogPostModel->getAllCategories(); // Access the model's method properly
+
+    return $result;
+}
+?>
+
